@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-charcoal: 44 44 44; /* #2C2C2C */
+    --color-cream: 245 245 220; /* #F5F5DC */
+    --color-gold: 212 175 55; /* #D4AF37 */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-cream font-sans text-charcoal antialiased overflow-x-hidden;
+    font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  /* Luxury Selection */
+  ::selection {
+    @apply bg-gold/30 text-charcoal;
+  }
+
+  /* Premium Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-stone;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gold hover:bg-gold-dark transition-colors;
+  }
+
+  /* Glassmorphism Base */
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-sm;
+  }
+
+  .glass-premium {
+    @apply bg-white/40 backdrop-blur-lg border border-white/50 shadow-luxury;
+  }
+
+  .glass-dark {
+    @apply bg-charcoal/80 backdrop-blur-md border border-white/10;
+  }
+
+  /* Smooth image loading */
+  img {
+    @apply transition-opacity duration-300;
+  }
+
+  /* Consistent link transitions */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Remove tap highlight on mobile */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
