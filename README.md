@@ -1,4 +1,4 @@
-# 🛋️ Muqqa's Interior - Luxury Furniture E-commerce
+# 🛋️ Muqa's Interior - Luxury Furniture E-commerce
 
 Complete full-stack store built with **React + Tailwind + Framer Motion** (frontend) & **Node/Express + MongoDB + Stripe + Cloudinary** (backend).
 
