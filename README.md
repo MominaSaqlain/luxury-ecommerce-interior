@@ -82,5 +82,7 @@ muqqa-interiors-store/
 - Image upload: POST /api/products (multer-cloudinary)
 - Deploy: Vercel (client), Render Railway (server+Mongo)
 
+  https://luxury-ecommerce-interior.vercel.app/
+  
 **Enjoy building beautiful interiors! 🏠✨**
 
