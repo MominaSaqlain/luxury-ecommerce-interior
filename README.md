@@ -81,7 +81,8 @@ muqqa-interiors-store/
 - Add auth (JWT/NextAuth) for orders
 - Image upload: POST /api/products (multer-cloudinary)
 - Deploy: Vercel (client), Render Railway (server+Mongo)
-
+  
+FRONTEND VIDEO :
   https://luxury-ecommerce-interior.vercel.app/
   
 **Enjoy building beautiful interiors! 🏠✨**
